@@ -11,7 +11,7 @@ from .FastTelethon import *
 LOGS.info("Starting...")
 
 try:
-    bot.start(bot_token=BOT_TOKEN)
+    bot.start(bot_token=5748691290:AAFkyWBN2KJXGbOOwJihMuXYb1EIuIRPAY0)
 except Exception as er:
     LOGS.info(er)
 
@@ -21,7 +21,7 @@ except Exception as er:
 @bot.on(events.NewMessage(pattern="/start"))
 async def _(e):
     if str(e.sender_id) not in OWNER and e.sender_id !=DEV:
-        return e.reply("**Sorry You're not An Authorised User!**")
+        return e.reply("**Gaand mara khud ka deploy kar bot🖕!**")
     await start(e)
 
 
